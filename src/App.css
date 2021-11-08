@@ -1,7 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
 .App {
   text-align: center;
 }
+/* #backgroudImg {
+  width: 100%;
+  height: 100vh;
+} */
+.container {
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  /* overflow-y: scroll; */
+}
+section {
+  height: 100vh;
+  /* scroll-snap-align: start; */
+}
 
+.page1-door1 {
+  pointer-events: none;
+  background-image: url("./imgs/index.png");
+  width: 100vw;
+  height: 85vh;
+  background-size: cover;
+  position: relative;
+  background-position: center bottom;
+}
+.page1-door1-text1 {
+  font-size: 2rem;
+  position: absolute;
+  bottom: 50%;
+  left: 10vh;
+}
+.page1-door1-text2 {
+  color: white;
+  pointer-events: none;
+  line-height: 3rem;
+  font-size: 1.8rem;
+  position: absolute;
+  bottom: 10%;
+  left: 10vh;
+  text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000,
+    0.5px 0.5px 0 #000;
+}
+.pink-underline {
+  border-bottom: 10px solid #ff41f7;
+  display: inline-block;
+  height: 1.1em;
+}
+.page1-door2 {
+  position: relative;
+  height: 15vh;
+  background-color: #000;
+}
+.page1-door2-text1 {
+  pointer-events: none;
+  padding-top: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #969696;
+}
+
+.topage2 {
+  background-image: url("./imgs/arrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 3vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.nav-item {
+  margin: 2rem 2rem 2rem 2rem;
+  font-size: 2rem;
+}
+
+.projects {
+  width: 100%;
+  margin-top: 2em;
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.project {
+  margin-bottom: 2em;
+  width: 35%;
+}
+.project img {
+  /* border-right: #969696 solid 10px;
+  border-bottom: #969696 solid 10px; */
+  border-radius: 5%;
+  width: 100%;
+}
+.project .text {
+  margin: 0rem;
+  width: 100%;
+  text-align: start;
+}
+.project h3 {
+  margin-bottom: 0rem;
+  line-height: 200%;
+}
+.project .class {
+  color: grey;
+  font-weight: bolder;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
