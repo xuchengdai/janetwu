@@ -5,7 +5,7 @@ const Project = (props) => {
       <div className="text">
         <h3>{props.name}</h3>
         <p className="class">{props.class}</p>
-        <p>{props.desc}</p>
+        <p className="desc">{props.desc}</p>
       </div>
     </div>
   );

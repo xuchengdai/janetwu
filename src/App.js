@@ -15,7 +15,7 @@ function App() {
     {
       id: 1,
       name: "Stop food waste",
-      class: "Research",
+      class: "Food industry",
       desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui cum veniam libero, facere ratione at quis animi perferendis tempore veritatis odit nobis natus eveniet nesciunt obcaecati iure sunt? Praesentium, esse.",
       img: "imgs/business.png",
     },

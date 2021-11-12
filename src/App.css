@@ -98,6 +98,13 @@ section {
 .project {
   margin-bottom: 2em;
   width: 35%;
+  transition: 0.2s ease-in-out;
+  border-radius: 5%;
+  max-height: 80vh;
+}
+.project:hover {
+  width: 36%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 .project img {
   /* border-right: #969696 solid 10px;
@@ -107,6 +114,7 @@ section {
 }
 .project .text {
   margin: 0rem;
+  padding: 1rem;
   width: 100%;
   text-align: start;
 }
@@ -150,5 +158,16 @@ section {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@media (max-width: 768px) {
+  .project {
+    min-width: 60vw;
+  }
+  .project .desc {
+    display: none;
+  }
+  .projects {
+    flex-wrap: wrap;
   }
 }
