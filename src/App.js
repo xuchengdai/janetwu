@@ -1,16 +1,23 @@
 import "./App.css";
 import Project from "./components/Project";
-
+import About from "./components/About";
 function App() {
-  const toPage2 = () => {
-    console.log("yeah");
-    document.getElementsByClassName("page2")[0].scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-      inline: "nearest",
-    });
-  };
+  // const toPage2 = () => {
+  //   console.log("yeah");
+  //   document.getElementsByClassName("page2")[0].scrollIntoView({
+  //     behavior: "smooth",
+  //     block: "start",
+  //     inline: "nearest",
+  //   });
+  // };
+  const nav1 = document.getElementById("nav-1");
+  const nav2 = document.getElementById("nav-2");
+  const nav3 = document.getElementById("nav-3");
 
+  const ClickNav1 = () => {
+    nav2.style.display = "none";
+    nav3.style.display = "none";
+  };
   const projects = [
     {
       id: 1,
@@ -65,16 +72,22 @@ function App() {
             Good design is not cheap.
             <br /> --Janet W<br />
           </div>
-          <button className="topage2" onClick={toPage2}></button>
+          {/* <button className="topage2" onClick={toPage2}></button> */}
         </div>
         {/* <img id="backgroudImg" src={index} alt="" /> */}
       </section>
       <section className="page2">
         <header>
           <ul className="navbar">
-            <li className="nav-item">Project</li>
-            <li className="nav-item">Resume</li>
-            <li className="nav-item">About me</li>
+            <li className="nav-item" id="nav-1" onClick={ClickNav1}>
+              Project
+            </li>
+            <li className="nav-item" id="nav-2">
+              Resume
+            </li>
+            <li className="nav-item" id="nav-3">
+              About me
+            </li>
           </ul>
         </header>
         <div className="projects">
@@ -88,6 +101,7 @@ function App() {
             />
           ))}
         </div>
+        <About />
       </section>
     </div>
   );
