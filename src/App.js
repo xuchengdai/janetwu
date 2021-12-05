@@ -14,10 +14,6 @@ function App() {
   const nav2 = document.getElementById("nav-2");
   const nav3 = document.getElementById("nav-3");
 
-  const ClickNav1 = () => {
-    nav2.style.display = "none";
-    nav3.style.display = "none";
-  };
   const projects = [
     {
       id: 1,
