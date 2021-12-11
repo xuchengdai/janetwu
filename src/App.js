@@ -47,8 +47,8 @@ function App() {
   return (
     <div className="container">
       <section className="page1">
-        <div className="page1-door1">
-          <div className="page1-door1-text1">
+        <div className="page1-backgroud">
+          <div className="page1-backgroud-text1">
             <h2>
               <span className="pink-underline">Jan</span>et Wu
             </h2>
@@ -75,7 +75,7 @@ function App() {
       <section className="page2">
         <header>
           <ul className="navbar">
-            <li className="nav-item" id="nav-1" onClick={ClickNav1}>
+            <li className="nav-item" id="nav-1">
               Project
             </li>
             <li className="nav-item" id="nav-2">

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -21,21 +22,31 @@ section {
   height: 100vh;
   /* scroll-snap-align: start; */
 }
-
-.page1-door1 {
+.page1 {
+  height: 100vh;
+}
+.page1-backgroud {
   pointer-events: none;
   background-image: url("./imgs/index.png");
   width: 100vw;
-  height: 85vh;
-  background-size: cover;
+  height: 90vh;
+  background-size: auto;
   position: relative;
-  background-position: center bottom;
 }
-.page1-door1-text1 {
-  font-size: 2rem;
+.page1-backgroud-text1 h2 {
+  font-style: normal;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 50px;
   position: absolute;
-  bottom: 50%;
-  left: 10vh;
+  bottom: 60%;
+  left: 15vh;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.pink-underline {
+  font-family: "Noto Sans TC", sans-serif;
+  border-bottom: 12px solid #ff41f7;
+  display: inline-block;
+  height: 1.3em;
 }
 .page1-door1-text2 {
   color: white;
@@ -48,11 +59,7 @@ section {
   text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000,
     0.5px 0.5px 0 #000;
 }
-.pink-underline {
-  border-bottom: 10px solid #ff41f7;
-  display: inline-block;
-  height: 1.1em;
-}
+
 .page1-door2 {
   position: relative;
   height: 15vh;
@@ -75,6 +82,10 @@ section {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+.page2 {
+  background-color: black;
 }
 .navbar {
   display: flex;
